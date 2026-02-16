@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAWTHAR | Tiramisu Haute Couture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">KAWTHAR<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#menu">La Carte</a></li>
+            <li><a href="#commande" class="nav-btn">Commander</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="reveal">L'Excellence du <br><span>Tiramisu</span></h1>
+            <p class="reveal-2">L'équilibre parfait entre la force du café et la douceur de la crème.</p>
+            <div class="hero-btns">
+                <a href="#commande" class="btn-primary">Réserver maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="commande" class="booking-section">
+        <div class="glass-card">
+            <h2>Espace Client <span>Privilège</span></h2>
+            <p>Remplissez vos informations pour une livraison exclusive.</p>
+            
+            <form id="orderForm">
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label>Nom Complet</label>
+                        <input type="text" placeholder="Ex: Sarah Lahlou" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Téléphone</label>
+                        <input type="tel" placeholder="06 XX XX XX XX" required>
+                    </div>
+                    <div class="input-group full">
+                        <label>Choix de la Création</label>
+                        <select>
+                            <option>Tiramisu Signature (Café)</option>
+                            <option>Éclat de Pistache</option>
+                            <option>Douceur Spéculoos</option>
+                        </select>
+                    </div>
+                    <div class="input-group full">
+                        <label>Adresse de livraison à Rabat/Salé</label>
+                        <textarea placeholder="Votre adresse précise..."></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Envoyer ma commande</button>
+            </form>
+            <div id="successMsg" class="hidden">Demande envoyée avec succès à la Cheffe Kawthar.</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
